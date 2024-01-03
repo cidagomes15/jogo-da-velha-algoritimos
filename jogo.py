@@ -8,8 +8,8 @@ screen.tracer(0,0) #para não mostrar cada fase dos desenhos
 
 
 def tabuleiro():
-    turtle.pencolor('violet')
-    turtle.pensize(10)
+    turtle.pencolor('black')
+    turtle.pensize(5)
     turtle.up()
     turtle.goto(-3,-1)
     turtle.seth(0)
@@ -35,20 +35,20 @@ def des_circ(x,y):
     turtle.up()
     turtle.goto(x,y-0.80)
     turtle.seth(0)
-    turtle.color('pink')
+    turtle.color('blue')
     turtle.down()
-    turtle.circle(0.80, steps=100)
+    turtle.circle(0.80, steps=90)
 
 def des_x(x,y):
-    turtle.color('green')
+    turtle.color('red')
     turtle.up()
-    turtle.goto(x-0.80,y-0.80)
+    turtle.goto(x-0.75,y-0.75)
     turtle.down()
-    turtle.goto(x+0.80,y+0.80)
+    turtle.goto(x+0.75,y+0.75)
     turtle.up()
-    turtle.goto(x-0.80,y+0.80)
+    turtle.goto(x-0.75,y+0.75)
     turtle.down()
-    turtle.goto(x+0.80,y-0.80)
+    turtle.goto(x+0.75,y-0.75)
     
 def verif(i,j,p):
     if p==0: return
